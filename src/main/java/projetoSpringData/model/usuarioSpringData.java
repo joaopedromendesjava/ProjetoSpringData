@@ -13,7 +13,7 @@ public class usuarioSpringData { // para o banco identificar e criar a classe
 	private Long id; // chave primaria e autogenerativa
 	
 	private String login;
-	private String senha;		// campos da tabela
+	private String senha;		// colunas da tabela
 	private String nome;
 	private String email;
 	private int idade;
