@@ -4,7 +4,7 @@
 	
 	
 	
-	<class>projetoSpringData.model.usuarioSpringData</class>
+	<class>projetoSpringData.model.UsuarioSpringData</class>
 												 <!-- mapeando no persistence todas as classes criadas devem aparecer aqui -->
 	
 	</persistence-unit>

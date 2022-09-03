@@ -8,20 +8,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import projetoSpringData.dao.interfaceSpringDataUser;
-import projetoSpringData.model.usuarioSpringData;
+import projetoSpringData.dao.InterfaceSpringDataUser;
+import projetoSpringData.model.UsuarioSpringData;
 
 @RunWith(SpringJUnit4ClassRunner.class) // para poder integrar o spring junto com o junit
-@ContextConfiguration(locations = {"classpath:META-INF/springConfig.xml"}) // lendo arquivo de config
+@ContextConfiguration(locations = {"classpath:META-INF/SpringConfig.xml"}) // lendo arquivo de config
 public class appSpringDataTest {
 	
 	@Autowired
-	private interfaceSpringDataUser interfaceSpringDataUser; // permite usar a interface para o crud
+	private InterfaceSpringDataUser interfaceSpringDataUser; // permite usar a interface para o crud
 	
 	@Test
 	public void testeInsert() { // metodo de insert
 		
-		usuarioSpringData usuarioSpringData = new usuarioSpringData();
+		UsuarioSpringData usuarioSpringData = new UsuarioSpringData();
 		
 		usuarioSpringData.setEmail("joaopedromendessilva@gmail.com");
 		usuarioSpringData.setIdade(19);
@@ -37,7 +37,7 @@ public class appSpringDataTest {
 	@Test
 	public void testeConsulta() { // metodo de consulta
 		
-		Optional<usuarioSpringData> usuarioSpringData = interfaceSpringDataUser.findById(3L); // pega o id para consultar cadastro
+		Optional<UsuarioSpringData> usuarioSpringData = interfaceSpringDataUser.findById(3L); // pega o id para consultar cadastro
 		
 		System.out.println(usuarioSpringData.get().getIdade());
 		System.out.println(usuarioSpringData.get().getEmail());

@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class usuarioSpringData { // para o banco identificar e criar a classe
+public class UsuarioSpringData { // para o banco identificar e criar a classe
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

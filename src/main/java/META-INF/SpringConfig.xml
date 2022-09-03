@@ -21,7 +21,7 @@
 	<!-- define conexão com banco -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="org.postgresql.Driver"/>
-		<property name="url" value ="jdbc:postgresql://localhost:5433/projetoSpringData"/>
+		<property name="url" value ="jdbc:postgresql://localhost:5433/ProjetoSpringData"/>
 		<property name="username" value="postgres"/>
 		<property name="password" value="@Jp33534072"/>
 	</bean>
@@ -35,7 +35,7 @@
 				<property name="generateDdl" value="true"/> <!-- gera as tabelas no banco -->
 			</bean>
 		</property>
-		<property name="persistenceUnitName" value="projetoSpringData"/>
+		<property name="persistenceUnitName" value="ProjetoSpringData"/>
 	</bean>
 	
 	<!-- Ativa controle transacional -->
