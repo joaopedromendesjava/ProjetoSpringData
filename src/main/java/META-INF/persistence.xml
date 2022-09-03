@@ -5,8 +5,9 @@
 	
 	
 	<class>projetoSpringData.model.UsuarioSpringData</class>
+	<class>projetoSpringData.model.Telefone</class>
 												 <!-- mapeando no persistence todas as classes criadas devem aparecer aqui -->
-	
+
 	</persistence-unit>
 </persistence>
 
